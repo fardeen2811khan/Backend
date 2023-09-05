@@ -28,10 +28,10 @@ app.use("/api/v1", user);
 app.use("/api/v1", order);
 app.use("/api/v1", payment);
 
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+app.use(express.static(path.join(__dirname, "https://64f70127f833a50531113009--rococo-smakager-249412.netlify.app/")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
+  res.sendFile(path.resolve(__dirname, "https://64f70127f833a50531113009--rococo-smakager-249412.netlify.app/"));
 });
 
 // Middleware for Errors
